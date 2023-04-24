@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-# Author: Jyoti Prakash Singh
-#Date: 1st April 2023
-
 #Feature selection using various Nature inspired algorithms for clickbait identification
 
 from sklearn.model_selection import train_test_split, cross_val_score
