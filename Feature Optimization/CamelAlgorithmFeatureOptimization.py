@@ -21,6 +21,9 @@ from collections import Counter
 import pandas as pd
 import numpy as np
 from numpy import load
+from collections import Counter
+from sklearn.datasets import make_classification
+from imblearn.over_sampling import BorderlineSMOTE
 
 #Task Definition
 
@@ -46,8 +49,13 @@ print("Reading and preparing Data")
 data= pd.read_csv("FeaturesAndLabel.csv")
 label=data["targetClass Label"]
 features=data.drop(['targetClass Label', 'id'], axis=1)
-feat=np.asarray(features)
-lab=np.asarray(label)
+
+sm = BorderlineSMOTE(kind='borderline-1',random_state=42)
+X_res, y_res = sm.fit_resample(features, label)
+
+feat=np.asarray(X_res)
+lab=np.asarray(y_res)
+
 feature_names = np.asarray(list(features))
 classes_list = ['Non-clickbait', 'Clickbait']
 
