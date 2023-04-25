@@ -17,7 +17,7 @@ The ratio of class in corpus is imbalanced in nature. We have applied BorderLine
  
  2) Balanced dataset - Accuracy : 88% (Random Forest) ; Precision : 88% ; Recall : 88% ; F1 Score : 88%
  
- 3) Balnced dataset with optimized features - Accuracy : 89% (Random Forest) ; Precision : 89% ; Recall : 89% ; F1 Score : 89%
+ 3) Balanced dataset with optimized features - Accuracy : 89% (Random Forest) ; Precision : 89% ; Recall : 89% ; F1 Score : 89%
  
  
  Our proposed model achieved effective result on the competitive state-of-the-arts and we believed that our method will help in assisting further studies on clickbait identification.
